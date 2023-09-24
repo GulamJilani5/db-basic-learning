@@ -1,0 +1,39 @@
+   // Creating Schema 
+    const basicInfoSchema = new mongoose.Schema({
+    
+      name:{
+        type:String,
+        required: [true, 'A tour must have name'],
+      },
+      city:{
+        type: String,
+      },
+      email:{
+        type: String,
+        required: [true, 'A tour must have a email'],
+        unique: true,
+      },
+      phone:{
+        type: String,
+        required: [true,'A tour must have phone number']
+      },
+      date:{
+        type: Date,
+        default: Date.now, // Default to the current date and time
+        min: '2023-01-01', // Minimum allowed date
+        max: '2030-12-31', // Maximum allowed date
+        required: true
+      }
+    })
+
+   //Data Modeling
+    const BasicInfo = mongoose.model('BasicInfo', basicInfoSchema);
+
+
+//Creating the document (Testing the tour)
+const testBasicInfo = new BasicInfo({
+  name:'Jilani',
+  city: 'Mumbai',
+  email: 'gulamjilanicse@gmail.com',
+  phone:'8669765323',
+})

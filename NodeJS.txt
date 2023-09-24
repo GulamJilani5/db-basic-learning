@@ -1,0 +1,59 @@
+NodeJS
+To create a app:
+npm init
+and proceed accordingly it will create package.json
+then npm i exress
+It will create all the node dependencies.
+
+Open in browser - http://127.0.0.1:3000/
+
+(a) When listening in app.js tO run on terminal - node app.js
+(b) We are listening in server.js file.
+   So we use - node server.js
+
+(c) To terminate the running server - ctrl + c 
+
+(d) npm instal nodemon --save-dev  (Lec-19, types of packages and install) 
+       To run node web server automatically
+      "scripts": {
+                   "start": "nodemon server.js"
+                 }
+       npm run start 
+
+ (e) npm i dotenv
+       To manage config.env environment variable
+
+ (f) npm install slugify
+
+ (g) npm install morgan
+
+
+MongoDB
+(1) Install MongoDB community server
+
+  we can add mongodb untill bin folder into environment variable
+  we can add nodejs and git into envrionment variable so that we can run them from anywhere.
+  
+(2) Install compass 
+  connect our localhost with port
+
+(3) creat db and collection in compass app
+
+(4) install mongodb atlas
+  authenticate your connection
+    On Atlas Cluster we can allow all IP address or particular IP address to get access of our database.
+
+(5) dababase connection string
+    mongodb+srv://gulamjilanicse:<PASSWORD>@cluster0.hzaa03l.mongodb.net/<DATABASENAME>?retryWrites=true
+
+(6) Install mongodb driver
+  allow to access or interact our node code to mongodb
+Collection
+_id 64fc38ff8b9dd2b185d49d35
+date "09-09-2023"
+email "gulamjilanicse@gmail.com"
+name "Jilani"
+phone "81234657"
+
+(7) Nodejs and Mongodb crud operation
+https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial-3-3-2/?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_6533760
