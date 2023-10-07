@@ -21,7 +21,7 @@ dotenv.config({path: './config.env'});
 const DBConnectionString = process.env.DATABASE;
 // console.log(DBConnectionString)
 // We can pass hardcoded
-// const DBConnectionString = 'mongodb+srv://gulamjilanicse:w1g72j5qUgiK3ClU@cluster0.hzaa03l.mongodb.net/first?retryWrites=true&w=majority'
+// const DBConnectionString = 'mongodb+srv://gulamjilanicse:<PASSWORD>@cluster0.hzaa03l.mongodb.net/<DATBASENAME>?retryWrites=true&w=majority'
 
 // When we are exporting password and replacing in the db connection string
 // const DBConnectionString = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD); 
